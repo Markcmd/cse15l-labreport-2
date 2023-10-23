@@ -79,18 +79,21 @@ Screenshots:
 ### Part 2
 Using the command line, show with ls and take screenshots of:
 + The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer)
-![StringServerPic1](pic_1.png)
+![StringServerPic1](private_keys.png)
 + The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6)
-![StringServerPic1](pic_1.png)
+![StringServerPic1](public_keys.png)
 + A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
-![StringServerPic1](pic_1.png)
+![StringServerPic1](login_ieng6_without_password.png)
 
 ### Part 3
-how to make a server.
-I learned github can create a html webpages.
-getting familier with some terminal command
-directory and path
-URLs not allowed spaces, spaces will chagend to +. 
+I learned:
++ how to connect to the computer in the cse basement, through my computer termial with command ssh <my_user_name>
++ how to make a server through termial by compiling and executing my Server.java and Program.java file that I saved in my git hub repository.
++ getting familier with some terminal command.
++ What is directory and path and how it works.
++ How web Search Enging basiclly works
++ URLs not allowed spaces, spaces will chagend to +. (So I used .replace('+', ' ') function to correct it.)
++ How to use scp command connect my computer and the computer inthe cse basement, in order to avoid repeatedly enter the password when login to my account.
 
 
 
