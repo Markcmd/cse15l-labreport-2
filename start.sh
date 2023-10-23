@@ -1,3 +1,3 @@
 set -e
-javac Server.java NumberServer.java
-java NumberServer 4001
+javac Server.java StringServer.java
+java StringServer 4001
