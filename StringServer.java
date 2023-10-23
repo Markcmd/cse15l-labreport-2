@@ -14,8 +14,9 @@ class Handler implements URLHandler {
         num +=1;
         str = str + String.valueOf(num)+ ". " + parameters[1]+ "\n" ;
         return str;
+      }esle{
+        return "404 Not Found!";
       }
-      return "404 Not Found!";
     }
 }
 
