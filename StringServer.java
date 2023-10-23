@@ -14,20 +14,21 @@ class Handler implements URLHandler {
         num +=1;
         str = str + String.valueOf(num)+ ". " + parameters[1]+ "\n" ;
         return str;
-      }esle{
-        return "404 Not Found!";
       }
+    }else{
+      return "404 Not Found!";
     }
 }
 
 class NumberServer {
-  public static void main(String[] args) throws IOException {
-    if(args.length == 0){
-      System.out.println("Missing port number! Try any number between 1024 to 49151");
-      return;
-    }
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+          System.out.println("Missing port number! Try any number between 1024 to 49151");
+          return;
+        }
 
     int port = Integer.parseInt(args[0]);
-    Server.start(port, new Handler());
-  }
+    
+    Server.start(port, new Handler());  
+    }
 }
