@@ -15,7 +15,7 @@ class Handler implements URLHandler {
         String[] parameters = url.getQuery().split("=");
         if(parameters[0].equals("s")){
           num +=1;
-          str = str + String.valueOf(num)+ ". " + parameters[1]+ "\n" ;
+          str = str + String.valueOf(num)+ ". " + parameters[1].replace('+', ' ')+ "\n" ;
           return str;
         }
       } 
