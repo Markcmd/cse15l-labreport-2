@@ -7,15 +7,15 @@ class Handler implements URLHandler {
   // A number that count number of requests.
   int num = 0;
 
-    public String handleRequest(URI url) {
-      if (url.getPath().contains("/add-message")) {
-        String[] parameters = url.getQuery().split("=");
-        if(parameters[0].equals("s")){
-          num +=1;
-          str = str + String.valueOf(num)+ ". " + parameters[1]+ "\n" ;
-          return str;
-        }
-        return "404 Not Found!";
+  public String handleRequest(URI url) {
+    if (url.getPath().contains("/add-message")) {
+      String[] parameters = url.getQuery().split("=");
+      if(parameters[0].equals("s")){
+        num +=1;
+        str = str + String.valueOf(num)+ ". " + parameters[1]+ "\n" ;
+        return str;
+      }
+      return "404 Not Found!";
     }
 }
 
