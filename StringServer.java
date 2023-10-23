@@ -8,18 +8,20 @@ class Handler implements URLHandler {
   int num = 0;
 
   public String handleRequest(URI url) {
-    if (url.getPath().contains("/add-message")) {
-      String[] parameters = url.getQuery().split("=");
-      if(parameters[0].equals("s")){
-        num +=1;
-        str = str + String.valueOf(num)+ ". " + parameters[1]+ "\n" ;
-        return str;
-      }
+    if (url.getPath().equals("/")) {
+      return str;
     }else{
+      if (url.getPath().contains("/add-message")) {
+        String[] parameters = url.getQuery().split("=");
+        if(parameters[0].equals("s")){
+          num +=1;
+          str = str + String.valueOf(num)+ ". " + parameters[1]+ "\n" ;
+          return str;
+        }
+      } 
       return "404 Not Found!";
     }
   }
-  return "404 Not Found!";
 }
 
 class NumberServer {
