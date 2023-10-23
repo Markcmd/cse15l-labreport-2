@@ -19,6 +19,7 @@ class Handler implements URLHandler {
       return "404 Not Found!";
     }
   }
+  return "404 Not Found!";
 }
 
 class NumberServer {
