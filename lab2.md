@@ -2,6 +2,6 @@
 ## Lab 2
 
 ### Part 1
-![cd-Test](cd-Test.png)
-
+![StringServerPic1](pic1.png)
+![StringServerPic2](pic2.png)
 + ```
