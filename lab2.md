@@ -50,7 +50,7 @@ Screenshots:
   + Server.start ()
   + main () 
   + handleRequest ()
-  + 
+
 + What are the relevant arguments to those methods, and the values of any relevant fields of the class?
   + Server.start()
 
@@ -65,7 +65,7 @@ Screenshots:
 
   + handleRequest()
 
-    The relevant argumetns are rul, an URI object contain command of URL.
+    The relevant argumetns are url, an URI object contain command of URL. And inside method handleRequest(), use url.getPath()equals("/") to check if the path is "/", if true then return the str which contain total outputs, if not then     use url.getPath().contains("/add-message") check if the path in url contains "/add-message". if not return "404 Not Found!", if yes use url.getQuery().split("=") split query with = sign, and the index 1 which with parameters[1] is      the message we want to add up to str. And I used parameters[1].replace('+', ' ') replace the "+" sign in the output with space.
 
 + How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
